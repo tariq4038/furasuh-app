@@ -1,8 +1,8 @@
-name: app
+﻿name: app
 description: "Furasuh Store App"
 publish_to: 'none'
 
-version: 1.0.1+2
+version: 1.1.0+3
 
 environment:
   sdk: ">=3.4.3 <4.0.0"
@@ -31,20 +31,23 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icon/icon.png"
+  remove_alpha_ios: true
+  image_path: "assets/icon/furasuh_adaptive_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/furasuh_adaptive_icon.png"
   min_sdk_android: 21
   web:
     generate: true
-    image_path: "assets/icon/icon.png"
+    image_path: "assets/icon/furasuh_adaptive_icon.png"
     background_color: "#ffffff"
     theme_color: "#ffffff"
   windows:
     generate: true
-    image_path: "assets/icon/icon.png"
+    image_path: "assets/icon/furasuh_adaptive_icon.png"
     icon_size: 48
   macos:
     generate: true
-    image_path: "assets/icon/icon.png"
+    image_path: "assets/icon/furasuh_adaptive_icon.png"
 
 flutter:
   uses-material-design: true
